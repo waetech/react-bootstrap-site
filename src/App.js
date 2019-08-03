@@ -6,6 +6,7 @@ import {Contact} from './components/Contact';
 import {NoMatch} from './components/NoMatch';
 import {Layout} from './components/Layout';
 import {NavigationBar} from './components/Nav';
+import {Jumbotron} from './components/Jumbotron';
 
 
 function App() {
@@ -13,12 +14,13 @@ function App() {
     return (
       <React.Fragment>
         <NavigationBar />
+        <Jumbotron />
         <Layout>
         <Router>
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/about" component={About}/>
-            <Route exact path="/contact" component={Contact}/>
+            <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact}/>
             <Route component={NoMatch}/>
   
           </Switch>
