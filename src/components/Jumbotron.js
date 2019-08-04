@@ -9,7 +9,7 @@ const Styles = styled.div`
     background-size: cover;
     color: #efefef;
     height: 100vh;
-    position: reltive;
+    position: relative;
     z-index: -2;
 }
 
@@ -28,9 +28,20 @@ const Styles = styled.div`
     margin-top: 300px;
 }
 
-button {
-    margin: 5px 5px;
-    padding: 10px 5px;
+.btn-1 {
+    margin-right: 2rem;
+    
+    
+}
+
+.btn-1:hover {
+    background-color: #61dafb;
+    color: #fff;
+}
+
+
+.btn-2 {
+    margin-left: 1rem;
 }
 `;
 
@@ -42,8 +53,8 @@ export const Jumbotron = () => (
               <h1 className="title">Need a Project Done Yesterday?</h1>
               <p>I create world class experiences for the right company that's willing to be successful.</p>
             <ButtonToolbar>
-                <Button variant="outline-light" href="#">Download Resume</Button>
-                <Button variant="outline-info" href="#">View Projects</Button>
+                <Button className="btn-1" variant="outline-info" href="#">Download Resume</Button>
+                <Button className="btn-2" variant="outline-light" href="#">View Projects</Button>    
             </ButtonToolbar>
           </Container>
       </Jumbo>
