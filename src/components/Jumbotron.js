@@ -30,8 +30,6 @@ const Styles = styled.div`
 
 .btn-1 {
     margin-right: 2rem;
-    
-    
 }
 
 .btn-1:hover {

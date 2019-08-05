@@ -7,6 +7,7 @@ import Network from '../assets/theNetworkTheme.png';
 
 
 const Styles = styled.div`
+
 .container {
     background-color: #fff;
     height: 500px;
